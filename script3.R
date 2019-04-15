@@ -1,0 +1,22 @@
+library(readxl)
+f<-file.choose()
+read_excel(f)
+exam<-read_excel("excel_exam.xlsx")
+exam
+mean(exam$english)
+exam<-read_excel(f, sheet =2)
+exam
+english <-c(90,80,70,60)
+english
+f<-file.choose()
+read.csv(f)
+exam<-read.csv(f)
+head(exam)
+head(exam, 4)
+View(exam)
+summary(exam)
+dim(exam)
+mpg<-as.data.frame((ggplot2::mpg))
+head(mpg)
+summary(mpg)
+hist(mpg$total)
