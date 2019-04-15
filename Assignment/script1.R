@@ -1,26 +1,21 @@
-mpg <- as.data.frame(ggplot2::mpg)
-mpg
-mpg[c(65, 124, 131, 153, 212), "hwy"] <- NA
-MPG
-mpg
-table (is.na(mpg$drv))
-table (is.na(mpg$hwy))      
-mpg %>%
-  filter(!is.na(hwy)) %>%
-  group_by(drv)%>%
-  summarise(mean_hwy=mean(hwy))
-mpg <- as.data.frame(ggplot2::mpg)
-mpg[c(10,14,58,93), "drv"] <-"k"
-mpg[c(29,43,129,203),"cty"]<-c(3,4,39,42)
-mpg
-table(mpg$drv)
-mpg$drv<- ifelse(mpg$drv %in% c("4", "f", "r"), mpg$drv, NA)
-table(mpg$drv)
-boxplot(mpg$cty)$stats
-mpg$cty <- ifelse(mpg$cty < 9 | mpg$cty > 26, NA, mpg$cty)
-boxplot(mpg$cty)
-mpg %>%
-  filter(!is.na(drv) & ! is.na(cty))%>%
-  group_by(drv) %>%
-  summarise(mean_cty = mean(cty))
-
+a <- 1
+a
+b<-2
+b
+c<- 14
+c
+a+2
+2*b
+var <-c(1,2,3,4,5)
+var
+str <- "a"
+str
+str<- c("Hello", "World", "is", "good!")
+str
+hi<-paste(str)
+hi
+library(ggplot2)
+x <- c ("a","b","c","d","e")
+x
+qplot(x)
+qplot(data =mpg, x= hwy)
